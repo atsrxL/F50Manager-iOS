@@ -4,7 +4,19 @@
 
 `feature/ios-688b4729-e714-465e-86ba-3c53fb331ea6`
 
-此目录是独立 Git 仓库：上层 ZTE-F50-OP 目录没有 Git 元数据，且包含刷机包和私有诊断资料。未将上层内容纳入版本控制，未修改 Android、协议或设备端，未配置远程或推送。
+此目录是独立 Git 仓库：上层 ZTE-F50-OP 目录没有 Git 元数据，且包含刷机包和私有诊断资料。未将上层内容纳入版本控制，未修改 Android、协议或设备端，发布仓库：https://github.com/atsrxL/F50Manager-iOS 。
+
+## AltStore Classic 安装
+
+源地址（在 AltStore → Sources → + 中添加）：
+
+https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/altstore.json
+
+[一键添加到 AltStore](altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2FatsrxL%2FF50Manager-iOS%2Fmain%2Faltstore.json)
+
+[下载 v0.1.0 IPA](https://github.com/atsrxL/F50Manager-iOS/releases/tag/v0.1.0)。IPA 未签名，由 AltStore Classic/AltServer 使用你的 Apple ID 重新签名；需要 iOS/iPadOS 17.0+。这不是 AltStore PAL 公证源。已验证公开源和 IPA 下载，尚未验证实际 AltStore 安装或 F50 真机 BLE。
+
+`main` 提供稳定源地址；开发分支仍保留。更新时发布新的 Release/IPA，再同步 `altstore.json` 中的版本、构建号、日期、字节大小和权限声明。
 
 ## 已实现
 

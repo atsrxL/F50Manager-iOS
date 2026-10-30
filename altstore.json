@@ -1,0 +1,49 @@
+{
+  "name": "F50 Manager",
+  "identifier": "cc.atsx.f50manager.source",
+  "subtitle": "F50 原生 iOS / iPadOS 管理客户端",
+  "description": "F50 Manager 的 AltStore Classic 分发源。支持 iOS / iPadOS 17.0 及以上。当前版本已通过模拟器和离线协议测试，真实 F50 蓝牙链路尚待联调。",
+  "iconURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/F50App/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "website": "https://github.com/atsrxL/F50Manager-iOS",
+  "tintColor": "00858A",
+  "apps": [
+    {
+      "name": "F50 Manager",
+      "bundleIdentifier": "cn.f50.manager.ios",
+      "developerName": "atsrxL",
+      "subtitle": "安全连接，管理你的 F50",
+      "localizedDescription": "原生 SwiftUI 蓝牙管理客户端：设备状态与流量、蜂窝信号、短信、Wi-Fi Host/EoIP 事务、制式/频段设置和重启确认。使用固定设备证书的 TLS 1.3 加密连接，未知数据不伪装为成功。\n\n提供完全离线的演示模式。iOS 首页使用用户主动建立的管理连接，不支持设备现有的多分块公开广播。首版不提供后台常驻或系统切换。\n\n重要：真实 F50 与 iPhone/iPad 蓝牙配对和链路尚未联调。仅预置设备身份 W3MJZCCR，其他设备会被拒绝连接。当前 IPA 未签名，由 AltStore Classic/AltServer 使用你的 Apple ID 重新签名安装；不是 AltStore PAL 公证应用。",
+      "iconURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/F50App/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "tintColor": "00858A",
+      "category": "utilities",
+      "screenshots": {
+        "iphone": [
+          {"imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/iphone-demo-dashboard.png", "width": 1206, "height": 2622},
+          {"imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/iphone-demo-messages.png", "width": 1206, "height": 2622},
+          {"imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/iphone-demo-device.png", "width": 1206, "height": 2622}
+        ],
+        "ipad": [
+          {"imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/ipad-demo-dashboard.png", "width": 1668, "height": 2420}
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "1",
+          "date": "2026-10-30",
+          "localizedDescription": "首版开发预览。iPhone/iPad 各 31 项测试通过，arm64 Release 构建通过；真实 BLE 联调待完成。",
+          "downloadURL": "https://github.com/atsrxL/F50Manager-iOS/releases/download/v0.1.0/F50Manager-0.1.0-unsigned.ipa",
+          "size": 9223940,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "发现并连接您附近的 F50，通过加密蓝牙读取状态、管理短信和设备设置。"
+        }
+      }
+    }
+  ],
+  "news": []
+}
