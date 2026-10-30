@@ -1,0 +1,68 @@
+{
+  "spec": "f50mgr/1",
+  "note": "Synthetic values only. Not secrets of any device.",
+  "crockford_alphabet": "0123456789ABCDEFGHJKMNPQRSTVWXYZ",
+  "identity": {
+    "cert_fp_sha256_hex": "2db73bc959a497242c730630962769ea270c5840607a1635351a4eb18ccdfd6c",
+    "device_id": "5PVKQJAS",
+    "adv_local_name": "F50-5PVK"
+  },
+  "code": {
+    "random_15_bytes_hex": "0123456789abcdeffedcba98765432",
+    "canonical": "04HMASW9NF6YZZPWQAC7CN1E",
+    "display": "04HM-ASW9-NF6Y-ZZPW-QAC7-CN1E",
+    "normalize_cases": [
+      {
+        "input": "04hm-asw9-nf6y-zzpw-qac7-cn1e",
+        "output": "04HMASW9NF6YZZPWQAC7CN1E"
+      },
+      {
+        "input": " 04HM ASW9 NF6Y ZZPW QAC7 CN1E ",
+        "output": "04HMASW9NF6YZZPWQAC7CN1E"
+      },
+      {
+        "input": "04HM-ASW9-NF6Y-ZZPW-QAC7-CN10",
+        "error": "CODE_CHECK"
+      },
+      {
+        "input": "ABCD-EFGH",
+        "error": "CODE_FORMAT"
+      },
+      {
+        "input": "04HMASW9NF6YZZPWQAC7CN1U",
+        "error": "CODE_FORMAT"
+      }
+    ]
+  },
+  "enroll": {
+    "client_nonce_b64": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8=",
+    "server_nonce_b64": "ICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj8=",
+    "label_server_hex": "4635304d47523120656e726f6c6c2d73657276657200",
+    "label_client_hex": "4635304d47523120656e726f6c6c2d636c69656e7400",
+    "server_proof_b64": "re6lVxvAuJLx6j5k6aMYhENMIM/B5uORIAK7AZPemm8=",
+    "client_proof_b64": "mnr3h7iN+Pkq33ZscU2pUNJ9P8uao5r9mqqR1QXG8Rk="
+  },
+  "login": {
+    "owner_id_b64": "oKGio6SlpqeoqaqrrK2urw==",
+    "owner_secret_b64": "QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl8=",
+    "client_nonce_b64": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8=",
+    "server_nonce_b64": "ICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj8=",
+    "label_hex": "4635304d475231206c6f67696e00",
+    "proof_b64": "++rw58t4DOm874OYveR4cdiFslFWAP/kZmRwGuaFrUw="
+  },
+  "app_frame": {
+    "json": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"sys.hello\",\"params\":{}}",
+    "frame_hex": "000000397b226a736f6e727063223a22322e30222c226964223a312c226d6574686f64223a227379732e68656c6c6f222c22706172616d73223a7b7d7d"
+  },
+  "gatt": {
+    "open_hex": "0201",
+    "open_ack_hex": "0201",
+    "close_normal_hex": "0300",
+    "data_chunks_att_mtu_23_for_app_frame_hex": [
+      "01000000397b226a736f6e727063223a22322e30",
+      "01222c226964223a312c226d6574686f64223a22",
+      "017379732e68656c6c6f222c22706172616d7322",
+      "013a7b7d7d"
+    ]
+  }
+}

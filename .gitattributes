@@ -1,0 +1,2 @@
+# Keep upstream license/notice files byte-for-byte, including their whitespace.
+F50App/Legal/*.txt -whitespace

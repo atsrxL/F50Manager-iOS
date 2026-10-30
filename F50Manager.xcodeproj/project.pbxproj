@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077F829F6A4BF59F930382EE /* BoringSSL-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 41EA17E5E0FA48B9AA703715 /* BoringSSL-LICENSE.txt */; };
+		0909DB9B76E77ADD096AD311 /* WireCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D996250A32DB4A93021C2 /* WireCodec.swift */; };
+		0EE765CD5F69281CC702C0BD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 046AB5334222BBB5BCF3E7FC /* PrivacyInfo.xcprivacy */; };
+		1020D8CE0BAD5070B41012F5 /* MemoryTLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42634EFFC51E47694BB46EBA /* MemoryTLS.swift */; };
+		10C5B136775F4FD793BD002E /* ActionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E10D38D1A29A7BE30E4C9 /* ActionPolicy.swift */; };
+		12F9BB5E4BE7D810846E9AC6 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60478CAA12873E0DED3FA960 /* JSONValue.swift */; };
+		26FAB20B67B19F276CC788B4 /* swift-collections-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 249456F1A8B9C996AF7C1164 /* swift-collections-LICENSE.txt */; };
+		276676D6F85E6E1CB0B8260D /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = C830CE87C5B16B309C1678ED /* NIOEmbedded */; };
+		28F24F900A6C1479D89C3AA2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB773E91F8175B894496704 /* Models.swift */; };
+		2AB72292B2FE8D4048B66E76 /* Fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 9E24DDAADA95BDDC821B4FCF /* Fixtures */; };
+		2E1E5C663119D39674A13D33 /* BLELink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D71C92C85B3C5F7912075 /* BLELink.swift */; };
+		33F690BA545688A9FA990F62 /* TransportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F890A07810B0491E072F9F6 /* TransportTests.swift */; };
+		3C5593DC5DB3C84693448A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6518D72E72A3F32B5AB1F48E /* Assets.xcassets */; };
+		3F2BF040C273BAC7EC5D4D6F /* NIOSSL in Frameworks */ = {isa = PBXBuildFile; productRef = C6BF0D7253D2992420DC14B3 /* NIOSSL */; };
+		3FABEA587D18D75A3D641F31 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785A7228D4645D176F940B81 /* DemoData.swift */; };
+		42AF6F07CE87B358D58EFDED /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA85FED4E7DB98587AEEED50 /* NIOCore */; };
+		4479EB7FA3D707617BB7D4FA /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEE19FDC33A17C37FC52B50 /* Components.swift */; };
+		47D49CA7F900A068CA52072F /* NIOSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 80350B5D2DE8F8D82C30F575 /* NIOSSL */; };
+		5409A8E3A1FA5E6326282772 /* F50ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27011AD113C2CCCD3F0BF1 /* F50ManagerApp.swift */; };
+		573C9BBE715A0B193BEFE837 /* swift-nio-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22F1C7AA934FAAD27918C27B /* swift-nio-NOTICE.txt */; };
+		6034200CE10196E99F4D47F1 /* TLSMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5C3E679FB874E4727B62A2 /* TLSMemoryTests.swift */; };
+		73AB586129CBDA8683AEAC70 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = C80DDAD1A1F9B721201F9BDD /* NIOTLS */; };
+		8BFBBCB60C5EFB8A375B3805 /* swift-nio-ssl-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BF80CB6578E0180E9CF7BA /* swift-nio-ssl-NOTICE.txt */; };
+		8C4307EEF0422BD18524A325 /* F50ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC50766823AB21B909C47C /* F50ManagerUITests.swift */; };
+		9EB98A4B54B9E3158CBFBBD4 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 268799904B56ED3A749379EF /* NIOCore */; };
+		A29FC098DFCB4AC5F25830B5 /* ClientPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A08AF30CF1A038AB76A8B /* ClientPolicyTests.swift */; };
+		B6265ACD90DC9B56DEE16780 /* F50Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D023C76B2DAF0735D27FD /* F50Session.swift */; };
+		C677807FD310ADE2F837E7D3 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C2C765423FF1E98C03A8C1 /* AppModelTests.swift */; };
+		C8FBD95D204C21207CD4EAAC /* swift-system-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE5106C67A49CB4242D0928A /* swift-system-LICENSE.txt */; };
+		CA4C0703812CF6B7979E0AA0 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A44B5EE4CBC60A5903519EE /* MessagesView.swift */; };
+		D343132751AA90B2A45483DF /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51798825F21D0FF1BFDFC7 /* AppModel.swift */; };
+		D86935A0AF867C40316CF044 /* SessionServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA92C1B5AB00085BDAD009 /* SessionServing.swift */; };
+		D95D59ABEC8744B8618B6C42 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FFF0B98AB3F4D36ECFBA90 /* DeviceView.swift */; };
+		DCB24AA82F387000970DC62A /* swift-nio-ssl-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC245BC890FE2C4E2BD117DD /* swift-nio-ssl-LICENSE.txt */; };
+		DCD928CB00DD8ADAC9A4E442 /* swift-nio-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B80EA7CBC53F2CD8B9C5791 /* swift-nio-LICENSE.txt */; };
+		EA22911787E5AA0ABAD356CD /* swift-atomics-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B09952509031D3755E8464A3 /* swift-atomics-LICENSE.txt */; };
+		EAE72C5722038420BDCE2F19 /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C459B32A3DB17C9BBE259 /* LegalView.swift */; };
+		EE85646E49872F04DD543C3F /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = B8F0219A1857004ABB694CF0 /* NIOTLS */; };
+		F1AB67DF56DF8E096F78D096 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6C83D78A359F9BFA222435 /* RootView.swift */; };
+		F53F7ED7795CDBCF5E1AD51E /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 7F849D5E102EF8C542C47E80 /* NIOEmbedded */; };
+		F709563F3F5E26B6ED856B1C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A889EEB335C460770452E /* DashboardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15A824F288C36CA2023AF145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EE53F1A56C9197C96D308AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20603DFC7A02AE95FB183A07;
+			remoteInfo = F50Manager;
+		};
+		6DFEAC7F79957A06FE4276E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EE53F1A56C9197C96D308AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20603DFC7A02AE95FB183A07;
+			remoteInfo = F50Manager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030D71C92C85B3C5F7912075 /* BLELink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLELink.swift; sourceTree = "<group>"; };
+		03BA92C1B5AB00085BDAD009 /* SessionServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionServing.swift; sourceTree = "<group>"; };
+		046AB5334222BBB5BCF3E7FC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		0B80EA7CBC53F2CD8B9C5791 /* swift-nio-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-nio-LICENSE.txt"; sourceTree = "<group>"; };
+		0E27011AD113C2CCCD3F0BF1 /* F50ManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F50ManagerApp.swift; sourceTree = "<group>"; };
+		110A08AF30CF1A038AB76A8B /* ClientPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientPolicyTests.swift; sourceTree = "<group>"; };
+		1A44B5EE4CBC60A5903519EE /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		1D6C83D78A359F9BFA222435 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1F890A07810B0491E072F9F6 /* TransportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTests.swift; sourceTree = "<group>"; };
+		22F1C7AA934FAAD27918C27B /* swift-nio-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-nio-NOTICE.txt"; sourceTree = "<group>"; };
+		249456F1A8B9C996AF7C1164 /* swift-collections-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-collections-LICENSE.txt"; sourceTree = "<group>"; };
+		41EA17E5E0FA48B9AA703715 /* BoringSSL-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BoringSSL-LICENSE.txt"; sourceTree = "<group>"; };
+		42634EFFC51E47694BB46EBA /* MemoryTLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryTLS.swift; sourceTree = "<group>"; };
+		4BFC50766823AB21B909C47C /* F50ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F50ManagerUITests.swift; sourceTree = "<group>"; };
+		5E5C3E679FB874E4727B62A2 /* TLSMemoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSMemoryTests.swift; sourceTree = "<group>"; };
+		60478CAA12873E0DED3FA960 /* JSONValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
+		6518D72E72A3F32B5AB1F48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67C2C765423FF1E98C03A8C1 /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
+		6B0C459B32A3DB17C9BBE259 /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		6CB773E91F8175B894496704 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		785A7228D4645D176F940B81 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		790CF4CEBE91F6ED78EC16D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		795B1E25C1320027820F15DA /* F50ManagerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = F50ManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BF80CB6578E0180E9CF7BA /* swift-nio-ssl-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-nio-ssl-NOTICE.txt"; sourceTree = "<group>"; };
+		989D996250A32DB4A93021C2 /* WireCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireCodec.swift; sourceTree = "<group>"; };
+		9E24DDAADA95BDDC821B4FCF /* Fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fixtures; path = Tests/Fixtures; sourceTree = SOURCE_ROOT; };
+		B09952509031D3755E8464A3 /* swift-atomics-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-atomics-LICENSE.txt"; sourceTree = "<group>"; };
+		B85A889EEB335C460770452E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C24E10D38D1A29A7BE30E4C9 /* ActionPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPolicy.swift; sourceTree = "<group>"; };
+		C70C63BA086017235733FF0C /* F50Manager.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = F50Manager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE51798825F21D0FF1BFDFC7 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		E64DC9A5E81F3F6F8003F0CB /* F50ManagerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = F50ManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC245BC890FE2C4E2BD117DD /* swift-nio-ssl-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-nio-ssl-LICENSE.txt"; sourceTree = "<group>"; };
+		EE5106C67A49CB4242D0928A /* swift-system-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-system-LICENSE.txt"; sourceTree = "<group>"; };
+		F3FFF0B98AB3F4D36ECFBA90 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		F80D023C76B2DAF0735D27FD /* F50Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F50Session.swift; sourceTree = "<group>"; };
+		FCEE19FDC33A17C37FC52B50 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F15621A78FBAE32F3138D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF6F07CE87B358D58EFDED /* NIOCore in Frameworks */,
+				276676D6F85E6E1CB0B8260D /* NIOEmbedded in Frameworks */,
+				73AB586129CBDA8683AEAC70 /* NIOTLS in Frameworks */,
+				3F2BF040C273BAC7EC5D4D6F /* NIOSSL in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB10303A7AEC3CA4FFB6565B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB98A4B54B9E3158CBFBBD4 /* NIOCore in Frameworks */,
+				F53F7ED7795CDBCF5E1AD51E /* NIOEmbedded in Frameworks */,
+				EE85646E49872F04DD543C3F /* NIOTLS in Frameworks */,
+				47D49CA7F900A068CA52072F /* NIOSSL in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DB0F14938B73007E327627 /* F50Core */ = {
+			isa = PBXGroup;
+			children = (
+				C24E10D38D1A29A7BE30E4C9 /* ActionPolicy.swift */,
+				785A7228D4645D176F940B81 /* DemoData.swift */,
+				60478CAA12873E0DED3FA960 /* JSONValue.swift */,
+				6CB773E91F8175B894496704 /* Models.swift */,
+				03BA92C1B5AB00085BDAD009 /* SessionServing.swift */,
+				3F26526DA0E8673E7A0EDD23 /* Transport */,
+			);
+			path = F50Core;
+			sourceTree = "<group>";
+		};
+		3F26526DA0E8673E7A0EDD23 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				030D71C92C85B3C5F7912075 /* BLELink.swift */,
+				F80D023C76B2DAF0735D27FD /* F50Session.swift */,
+				42634EFFC51E47694BB46EBA /* MemoryTLS.swift */,
+				989D996250A32DB4A93021C2 /* WireCodec.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		561C968E8920CEBAF34F80F6 /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				41EA17E5E0FA48B9AA703715 /* BoringSSL-LICENSE.txt */,
+				B09952509031D3755E8464A3 /* swift-atomics-LICENSE.txt */,
+				249456F1A8B9C996AF7C1164 /* swift-collections-LICENSE.txt */,
+				0B80EA7CBC53F2CD8B9C5791 /* swift-nio-LICENSE.txt */,
+				22F1C7AA934FAAD27918C27B /* swift-nio-NOTICE.txt */,
+				EC245BC890FE2C4E2BD117DD /* swift-nio-ssl-LICENSE.txt */,
+				96BF80CB6578E0180E9CF7BA /* swift-nio-ssl-NOTICE.txt */,
+				EE5106C67A49CB4242D0928A /* swift-system-LICENSE.txt */,
+			);
+			path = Legal;
+			sourceTree = "<group>";
+		};
+		845BBC45EE6FE7461297E1EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCEE19FDC33A17C37FC52B50 /* Components.swift */,
+				B85A889EEB335C460770452E /* DashboardView.swift */,
+				F3FFF0B98AB3F4D36ECFBA90 /* DeviceView.swift */,
+				6B0C459B32A3DB17C9BBE259 /* LegalView.swift */,
+				1A44B5EE4CBC60A5903519EE /* MessagesView.swift */,
+				1D6C83D78A359F9BFA222435 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A48D57F507B0404745962EB0 = {
+			isa = PBXGroup;
+			children = (
+				AC90C97CF2C1C531318EE387 /* F50App */,
+				22DB0F14938B73007E327627 /* F50Core */,
+				E53FBC5F452143DB481895EC /* Tests */,
+				A555845E533A84F947BA08A8 /* UITests */,
+				E5EE64A0A1BE48D81614F736 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A555845E533A84F947BA08A8 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BFC50766823AB21B909C47C /* F50ManagerUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		AC90C97CF2C1C531318EE387 /* F50App */ = {
+			isa = PBXGroup;
+			children = (
+				CE51798825F21D0FF1BFDFC7 /* AppModel.swift */,
+				6518D72E72A3F32B5AB1F48E /* Assets.xcassets */,
+				0E27011AD113C2CCCD3F0BF1 /* F50ManagerApp.swift */,
+				790CF4CEBE91F6ED78EC16D4 /* Info.plist */,
+				046AB5334222BBB5BCF3E7FC /* PrivacyInfo.xcprivacy */,
+				561C968E8920CEBAF34F80F6 /* Legal */,
+				845BBC45EE6FE7461297E1EF /* Views */,
+			);
+			path = F50App;
+			sourceTree = "<group>";
+		};
+		E53FBC5F452143DB481895EC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				67C2C765423FF1E98C03A8C1 /* AppModelTests.swift */,
+				110A08AF30CF1A038AB76A8B /* ClientPolicyTests.swift */,
+				9E24DDAADA95BDDC821B4FCF /* Fixtures */,
+				5E5C3E679FB874E4727B62A2 /* TLSMemoryTests.swift */,
+				1F890A07810B0491E072F9F6 /* TransportTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E5EE64A0A1BE48D81614F736 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C70C63BA086017235733FF0C /* F50Manager.app */,
+				795B1E25C1320027820F15DA /* F50ManagerTests.xctest */,
+				E64DC9A5E81F3F6F8003F0CB /* F50ManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20603DFC7A02AE95FB183A07 /* F50Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE7E9C7B9CADE92D344B03C /* Build configuration list for PBXNativeTarget "F50Manager" */;
+			buildPhases = (
+				E0D48CBB976BDB38E8886717 /* Sources */,
+				D7ED64962F90687E6B82CE90 /* Resources */,
+				CB10303A7AEC3CA4FFB6565B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = F50Manager;
+			packageProductDependencies = (
+				268799904B56ED3A749379EF /* NIOCore */,
+				7F849D5E102EF8C542C47E80 /* NIOEmbedded */,
+				B8F0219A1857004ABB694CF0 /* NIOTLS */,
+				80350B5D2DE8F8D82C30F575 /* NIOSSL */,
+			);
+			productName = F50Manager;
+			productReference = C70C63BA086017235733FF0C /* F50Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FD9A9BC9200B39D63B90C0C /* F50ManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8103B48DBA5632CB458DAB /* Build configuration list for PBXNativeTarget "F50ManagerUITests" */;
+			buildPhases = (
+				712A3A8A8B0A0CAD72E68154 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC42277E93A76C7F5644A896 /* PBXTargetDependency */,
+			);
+			name = F50ManagerUITests;
+			packageProductDependencies = (
+			);
+			productName = F50ManagerUITests;
+			productReference = E64DC9A5E81F3F6F8003F0CB /* F50ManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CD40B4FD313198993B85673C /* F50ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B107756F0F6A16AF823845 /* Build configuration list for PBXNativeTarget "F50ManagerTests" */;
+			buildPhases = (
+				8395776A4AF13CE12C4B596E /* Sources */,
+				9D74160365E1D49BAA968F2A /* Resources */,
+				7F15621A78FBAE32F3138D29 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05126EAEE92B669B9B2EB875 /* PBXTargetDependency */,
+			);
+			name = F50ManagerTests;
+			packageProductDependencies = (
+				FA85FED4E7DB98587AEEED50 /* NIOCore */,
+				C830CE87C5B16B309C1678ED /* NIOEmbedded */,
+				C80DDAD1A1F9B721201F9BDD /* NIOTLS */,
+				C6BF0D7253D2992420DC14B3 /* NIOSSL */,
+			);
+			productName = F50ManagerTests;
+			productReference = 795B1E25C1320027820F15DA /* F50ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EE53F1A56C9197C96D308AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					20603DFC7A02AE95FB183A07 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					4FD9A9BC9200B39D63B90C0C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20603DFC7A02AE95FB183A07;
+					};
+					CD40B4FD313198993B85673C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB81C47B581308DA2DF7F164 /* Build configuration list for PBXProject "F50Manager" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A48D57F507B0404745962EB0;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */,
+				13D6A5A12FF302C63D28ADC6 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E5EE64A0A1BE48D81614F736 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20603DFC7A02AE95FB183A07 /* F50Manager */,
+				CD40B4FD313198993B85673C /* F50ManagerTests */,
+				4FD9A9BC9200B39D63B90C0C /* F50ManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D74160365E1D49BAA968F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB72292B2FE8D4048B66E76 /* Fixtures in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7ED64962F90687E6B82CE90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5593DC5DB3C84693448A0A /* Assets.xcassets in Resources */,
+				077F829F6A4BF59F930382EE /* BoringSSL-LICENSE.txt in Resources */,
+				0EE765CD5F69281CC702C0BD /* PrivacyInfo.xcprivacy in Resources */,
+				EA22911787E5AA0ABAD356CD /* swift-atomics-LICENSE.txt in Resources */,
+				26FAB20B67B19F276CC788B4 /* swift-collections-LICENSE.txt in Resources */,
+				DCD928CB00DD8ADAC9A4E442 /* swift-nio-LICENSE.txt in Resources */,
+				573C9BBE715A0B193BEFE837 /* swift-nio-NOTICE.txt in Resources */,
+				DCB24AA82F387000970DC62A /* swift-nio-ssl-LICENSE.txt in Resources */,
+				8BFBBCB60C5EFB8A375B3805 /* swift-nio-ssl-NOTICE.txt in Resources */,
+				C8FBD95D204C21207CD4EAAC /* swift-system-LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		712A3A8A8B0A0CAD72E68154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4307EEF0422BD18524A325 /* F50ManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8395776A4AF13CE12C4B596E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C677807FD310ADE2F837E7D3 /* AppModelTests.swift in Sources */,
+				A29FC098DFCB4AC5F25830B5 /* ClientPolicyTests.swift in Sources */,
+				6034200CE10196E99F4D47F1 /* TLSMemoryTests.swift in Sources */,
+				33F690BA545688A9FA990F62 /* TransportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0D48CBB976BDB38E8886717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C5B136775F4FD793BD002E /* ActionPolicy.swift in Sources */,
+				D343132751AA90B2A45483DF /* AppModel.swift in Sources */,
+				2E1E5C663119D39674A13D33 /* BLELink.swift in Sources */,
+				4479EB7FA3D707617BB7D4FA /* Components.swift in Sources */,
+				F709563F3F5E26B6ED856B1C /* DashboardView.swift in Sources */,
+				3FABEA587D18D75A3D641F31 /* DemoData.swift in Sources */,
+				D95D59ABEC8744B8618B6C42 /* DeviceView.swift in Sources */,
+				5409A8E3A1FA5E6326282772 /* F50ManagerApp.swift in Sources */,
+				B6265ACD90DC9B56DEE16780 /* F50Session.swift in Sources */,
+				12F9BB5E4BE7D810846E9AC6 /* JSONValue.swift in Sources */,
+				EAE72C5722038420BDCE2F19 /* LegalView.swift in Sources */,
+				1020D8CE0BAD5070B41012F5 /* MemoryTLS.swift in Sources */,
+				CA4C0703812CF6B7979E0AA0 /* MessagesView.swift in Sources */,
+				28F24F900A6C1479D89C3AA2 /* Models.swift in Sources */,
+				F1AB67DF56DF8E096F78D096 /* RootView.swift in Sources */,
+				D86935A0AF867C40316CF044 /* SessionServing.swift in Sources */,
+				0909DB9B76E77ADD096AD311 /* WireCodec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05126EAEE92B669B9B2EB875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20603DFC7A02AE95FB183A07 /* F50Manager */;
+			targetProxy = 6DFEAC7F79957A06FE4276E9 /* PBXContainerItemProxy */;
+		};
+		EC42277E93A76C7F5644A896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20603DFC7A02AE95FB183A07 /* F50Manager */;
+			targetProxy = 15A824F288C36CA2023AF145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04314E06854CE9CD16355589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = F50App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.f50.manager.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FC9E0C5363DCDE9BC3CCF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86A5858BE03448A8558BBC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.f50.manager.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = F50Manager;
+			};
+			name = Release;
+		};
+		91898E61BABDEB8B9459328D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = F50App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.f50.manager.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B2A70D4D55FC29F0D184608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.f50.manager.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/F50Manager.app/F50Manager";
+			};
+			name = Release;
+		};
+		A176E4D79042924360BA9514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.f50.manager.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = F50Manager;
+			};
+			name = Debug;
+		};
+		AC17B612F0437B790125DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.f50.manager.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/F50Manager.app/F50Manager";
+			};
+			name = Debug;
+		};
+		DEDECF58D3773C4E1C9A28E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DE7E9C7B9CADE92D344B03C /* Build configuration list for PBXNativeTarget "F50Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91898E61BABDEB8B9459328D /* Debug */,
+				04314E06854CE9CD16355589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		14B107756F0F6A16AF823845 /* Build configuration list for PBXNativeTarget "F50ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC17B612F0437B790125DEDF /* Debug */,
+				9B2A70D4D55FC29F0D184608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AD8103B48DBA5632CB458DAB /* Build configuration list for PBXNativeTarget "F50ManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A176E4D79042924360BA9514 /* Debug */,
+				86A5858BE03448A8558BBC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB81C47B581308DA2DF7F164 /* Build configuration list for PBXProject "F50Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEDECF58D3773C4E1C9A28E4 /* Debug */,
+				0FC9E0C5363DCDE9BC3CCF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13D6A5A12FF302C63D28ADC6 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-ssl.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.29.0;
+			};
+		};
+		A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.81.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		268799904B56ED3A749379EF /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+		7F849D5E102EF8C542C47E80 /* NIOEmbedded */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOEmbedded;
+		};
+		80350B5D2DE8F8D82C30F575 /* NIOSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13D6A5A12FF302C63D28ADC6 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */;
+			productName = NIOSSL;
+		};
+		B8F0219A1857004ABB694CF0 /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		C6BF0D7253D2992420DC14B3 /* NIOSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13D6A5A12FF302C63D28ADC6 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */;
+			productName = NIOSSL;
+		};
+		C80DDAD1A1F9B721201F9BDD /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		C830CE87C5B16B309C1678ED /* NIOEmbedded */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOEmbedded;
+		};
+		FA85FED4E7DB98587AEEED50 /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1381082916DA5971CEF458D /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2EE53F1A56C9197C96D308AC /* Project object */;
+}
